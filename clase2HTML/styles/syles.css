@@ -14,6 +14,7 @@ clase/etiqueta {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 /*  Navbar Style  */
@@ -27,16 +28,23 @@ nav {
 /* Button header styles */
 .btn-header-style {
 
+    width: 10rem;
+    text-decoration: none;
+    background-color: #37b13d;
+    padding: 6px;
     color: #fff;
-    background-color: #33b13d;
-    padding: 10px;
-    border: 0;
-    border-radius: 5px;
-    margin-top: 50px; /* Espaciado arriba
+    border-radius: 6px;
+    margin-top: 20px;
+    transition: all 0.6s;
+    text-align: center; /* Espaciado arriba
     margin-bottom: ;   Espaciado Abajo
     margin-left: ;  Espaciado Izquierda
     margin-right: ; Espaciado  derecha */
+}
 
+.btn-header-style:hover {
+    background-color: yellow;
+    color: black;
 }
 
 
@@ -45,23 +53,81 @@ nav {
 }
 
 /* Header container styles */
-.header-container {
-   
-    height: 500px;
+.header-container-style  {
     display: flex;
+    height: 550px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #fff;
-}
+    color: white;
+  }
 
-.bg-header{
 
-    background-image: url("..//img/burguer-header.jfif");
+
+
+.bg-header-style{
+
+    background-image: url("../img/burguer-header.jfif");
     background-repeat: no-repeat;/* Sirve para que no se repia una imagen cuando es muy pequeña*/
     background-size: cover; /* obliga a la imagen ocupar la totalidad del div y lo alinea */
     background-position-y: center;
     opacity: 0.6;
+}
+
+
+    /* seccion tarjetas */ 
+
+    .img-size { 
+        width: 300px;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .cards-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+
+    .card-container {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+    }
+
+   .text-card {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+   .btn-order{  
+        width: 60px;
+        text-decoration: none;
+        background-color: mediumseagreen;
+        padding: 6px;
+        color: #fff;
+        border-radius: 6px;
+        margin-top: 3rem;
+        transition: all 0.6s;
+    }
+
     
 
-}
+    .btn-order:hover {
+        background-color: yellow;
+        color: black;
+    }
+
+    .border-card {
+        border:  solid gray 1px;
+        border-radius: 7px;
+    }
+
+
+    .description-card {
+        padding: 2rem;
+    }
+    
